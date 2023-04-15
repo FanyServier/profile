@@ -1,0 +1,87 @@
+@import url(https://use.fontawesome.com/releases/v6.1.2/css/all.css);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@100&display=swap);
+
+/* Colors and fonts */
+body {
+  font-family: "Roboto", bold;
+  background-color: #EEEE;
+  color: #621180;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  padding: 10;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins";
+  color: #062C30;
+}
+
+a:hover {
+  color: #7c7a7a;
+}
+
+/* Custom design with class (99% of your design) */
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: #FFFF;
+  padding: 50px;
+  width: 500px;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+.list-inline {
+  list-style: none;
+  color: #3C4048;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  padding: 0px;
+
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.card > a {
+  color: rgb(252, 251, 251);
+  border-radius: 5px;
+  background-color: rgb(91, 23, 144);
+  padding: 5px 10px;
+  transition: .3s;
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+/* Design adjustments using id (1% design remaining) */
+#profile-pic {
+  width: 180px;
+  height: 200px;
+  border-radius: 50%;
+}
